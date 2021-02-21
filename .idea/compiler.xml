@@ -9,5 +9,8 @@
         <module name="carsys" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Mybatis-generator" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

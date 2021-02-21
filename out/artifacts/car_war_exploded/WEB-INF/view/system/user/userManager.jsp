@@ -30,7 +30,6 @@
     <legend>查询条件</legend>
 </fieldset>
 <form class="layui-form" method="post" id="searchFrm">
-
     <div class="layui-form-item">
         <div class="layui-inline">
             <label class="layui-form-label">用户姓名:</label>

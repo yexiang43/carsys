@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <display-name>car</display-name>
+    <display-name>Archetype Created Web Application</display-name>
 
     <!--1、启动Spring的容器-->
     <context-param>
@@ -88,5 +88,4 @@
         <filter-name>WebStatFilter</filter-name>
         <servlet-name>StatViewServlet</servlet-name>
     </filter-mapping>
-
 </web-app>
