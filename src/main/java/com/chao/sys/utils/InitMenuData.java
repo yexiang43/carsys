@@ -1,4 +1,5 @@
-package com.chao.sys.utils;//package com.chao.sys.utils;
+package com.chao.sys.utils;
+//package com.chao.sys.utils;
 //
 //import com.chao.sys.domain.Menu;
 //import com.chao.sys.mapper.MenuMapper;
