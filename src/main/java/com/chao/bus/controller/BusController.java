@@ -10,9 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("bus")
 public class BusController {
 
+    /**
+     * 跳转客户管理
+     * @return
+     */
     @RequestMapping("toCustomerManager")
     public String toCustomerManager()
     {
         return "business/customer/customerManager";
     }
+    /**
+     * 跳转车辆管理
+     * @return
+     */
+    @RequestMapping("toCarManager")
+    public String toCarManager()
+    {
+        return "business/car/carManager";
+    }
+
 }
