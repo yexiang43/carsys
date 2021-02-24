@@ -67,5 +67,16 @@
 ##### 车辆管理:
 对汽车进行添加，删除，管理，可以添加车辆图片。并有定时任务清理临时文件。
 
-![数据源效果欣赏](https://github.com/yexiang43/carsys.git/images/Drud.png)
 持续更新中......
+## 效果展示：
+![主页效果展示](https://github.com/yexiang43/carsys.git/images/index.png)
+![菜单管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
+![公告管理管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
+![角色管理管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
+![用户管理管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
+![数据源效果欣赏](https://github.com/yexiang43/carsys.git/images/Drud.png)
+![日志管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
+![客户管理效果展示](https://github.com/yexiang43/carsys.git/images/customer.png)
+![汽车管理效果展示](https://github.com/yexiang43/carsys.git/images/car01.png)
+![汽车管理效果展示](https://github.com/yexiang43/carsys.git/images/car03.png)
+![汽车管理效果展示](https://github.com/yexiang43/carsys.git/images/car02.png)

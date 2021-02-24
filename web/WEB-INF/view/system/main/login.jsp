@@ -27,7 +27,7 @@
     <div class="layui-form-item input-item" id="imgCode">
         <label for="code">验证码</label>
         <input type="text" placeholder="请输入验证码" autocomplete="off" name="code" id="code" class="layui-input">
-        <img src="${chao}/login/getCode.action" onclick="this.src=this.src+'?'">
+        <img src="${chao}/static/images/code.jpg" onclick="this.src=this.src+'?'">
     </div>
     <div class="layui-form-item">
         <button class="layui-btn layui-block" lay-filter="login" lay-submit>登录</button>
