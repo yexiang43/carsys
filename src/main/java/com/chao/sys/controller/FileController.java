@@ -41,6 +41,7 @@ public class FileController {
 		if (!dirFile.exists()) {
 			dirFile.mkdirs();// 创建文件夹
 		}
+
 		// 得到文件原名
 		String oldName = mf.getOriginalFilename();
 		// 根据文件原名得到新名

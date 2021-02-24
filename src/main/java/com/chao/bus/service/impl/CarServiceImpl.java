@@ -4,6 +4,8 @@ import com.chao.bus.domain.Car;
 import com.chao.bus.mapper.CarMapper;
 import com.chao.bus.service.CarService;
 import com.chao.bus.vo.CarVo;
+import com.chao.sys.constast.SysConstast;
+import com.chao.sys.utils.AppFileUtils;
 import com.chao.sys.utils.DataGridView;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
@@ -33,6 +35,13 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void deleteCar(String Carnumber) {
+         //先删图片
+        Car car = this.carMapper.selectByPrimaryKey(Carnumber);
+        System.out.println(car.getCarimg());
+        if (!car.getCarimg().equals(SysConstast.DEFAULT_CAR_IMG))
+        {
+            AppFileUtils.deleteFileUsePath(car.getCarimg());
+        }
 
         this.carMapper.deleteByPrimaryKey(Carnumber);
     }
@@ -50,4 +59,8 @@ public class CarServiceImpl implements CarService {
         this.carMapper.updateByPrimaryKeySelective(carVo);
     }
 
+    @Override
+    public Car queryCarNumber(String carnumber) {
+        return this.carMapper.selectByPrimaryKey(carnumber);
+    }
 }

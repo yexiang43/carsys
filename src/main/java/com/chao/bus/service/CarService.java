@@ -1,6 +1,7 @@
 package com.chao.bus.service;
 
 
+import com.chao.bus.domain.Car;
 import com.chao.bus.vo.CarVo;
 import com.chao.sys.utils.DataGridView;
 
@@ -37,4 +38,10 @@ public interface CarService {
      */
     void deleteBatchCar(String[] identitys);
 
+    /**
+     * 根据车牌号查询车辆
+     * @param carnumber
+     * @return
+     */
+    Car queryCarNumber(String carnumber);
 }

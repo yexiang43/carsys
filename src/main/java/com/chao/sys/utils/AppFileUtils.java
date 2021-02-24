@@ -89,6 +89,8 @@ public class AppFileUtils {
 	 */
 	public static void deleteFileUsePath(String path) {
 		String realPath=PATH+path;
+
+		System.out.println(realPath+"========");
 		//根据文件
 		File file=new File(realPath);
 		if(file.exists()) {

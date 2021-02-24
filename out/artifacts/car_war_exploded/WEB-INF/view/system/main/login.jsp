@@ -15,7 +15,7 @@
 </head>
 <body class="loginBody">
 <form class="layui-form" id="loginFrm" method="post" action="${chao}/login/login.action">
-    <div class="login_face"><img src="${chao}/static/images/face.jpg" class="userAvatar"></div>
+    <div class="login_face"><img src="${chao}/static/images/login.jpg" style="width: 100px;height: 90px;" class="userAvatar"></div>
     <div class="layui-form-item input-item">
         <label for="loginname">用户名</label>
         <input type="text" placeholder="请输入用户名" autocomplete="off" name="loginname" id="loginname" class="layui-input" lay-verify="required">
