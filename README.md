@@ -69,7 +69,7 @@
 
 持续更新中......
 ## 效果展示：
-![主页效果展示](https://github.com/yexiang43/carsys.git/images/index.png)
+![主页效果展示](/images/index.png)
 ![菜单管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
 ![公告管理管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
 ![角色管理管理效果展示](https://github.com/yexiang43/carsys.git/images/loginfo.png)
