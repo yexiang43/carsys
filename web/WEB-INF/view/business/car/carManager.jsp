@@ -224,8 +224,8 @@
 				, {field: 'cartype', title: '车牌类型', align: 'center',width: '100'}
 				, {field: 'color', title: '车辆颜色', align: 'center',width:'100'}
 				, {field: 'price', title: '购买价格', align: 'center',width: '90'}
-				, {field: 'rentprice', title: '出租价格', align: 'center',width: '100'}
-				, {field: 'deposit', title: '出租押金', align: 'center',width: '80'}
+				, {field: 'rentprice', title: '出租价格', align: 'center',width: '110'}
+				, {field: 'deposit', title: '出租押金', align: 'center',width: '110'}
 				, {
 					field: 'isrenting', title: '出租状态', align: 'center', width: '90', templet: function (d) {
 						return d.isrenting == '1' ? '<font color=blue>已出租</font>' : d.isrenting=='0'?'<font color=red>未出租</font>':'<font color=#f4a460>审核中</font>';

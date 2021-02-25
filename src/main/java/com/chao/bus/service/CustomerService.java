@@ -41,4 +41,10 @@ public interface CustomerService {
      */
     void deleteBatchCustomer(String[] identitys);
 
+    /**
+     * 根据客户身份证号查询客户是否存在
+     * @param identity
+     * @return
+     */
+    Customer queryCustomerByidentity(String identity);
 }

@@ -51,4 +51,8 @@ public class CustomerServiceImpl implements CustomerService {
         this.customerMapper.updateByPrimaryKeySelective(customerVo);
     }
 
+    @Override
+    public Customer queryCustomerByidentity(String identity) {
+        return this.customerMapper.selectByPrimaryKey(identity);
+    }
 }
