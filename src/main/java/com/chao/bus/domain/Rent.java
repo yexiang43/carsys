@@ -26,6 +26,7 @@ public class Rent {
 
     private String opername;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createtime;
 
@@ -99,5 +100,20 @@ public class Rent {
 
     public void setCreatetime(Date createtime) {
         this.createtime = createtime;
+    }
+
+    @Override
+    public String toString() {
+        return "Rent{" +
+                "rentid='" + rentid + '\'' +
+                ", price=" + price +
+                ", begindate=" + begindate +
+                ", returndate=" + returndate +
+                ", rentflag=" + rentflag +
+                ", identity='" + identity + '\'' +
+                ", carnumber='" + carnumber + '\'' +
+                ", opername='" + opername + '\'' +
+                ", createtime=" + createtime +
+                '}';
     }
 }

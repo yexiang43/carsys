@@ -70,6 +70,9 @@
 ##### 汽车出租
 通过客户身份证号，查询未出租的汽车列表。可以进行汽车的出租。
 
+##### 出租单管理
+对出租单信息进行修改，删除。
+
 持续更新中......
 ## 效果展示：
 ![主页效果展示](https://github.com/yexiang43/carsys/raw/master/images/index.png)
@@ -85,4 +88,6 @@
 ![汽车管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/car02.png)
 ![汽车出租效果展示](https://github.com/yexiang43/carsys/raw/master/images/RentCar01.png)
 ![汽车出租效果展示](https://github.com/yexiang43/carsys/raw/master/images/RentCar02.png)
+![出租单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/rent.png)
+
 

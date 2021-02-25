@@ -138,5 +138,31 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where rentid = #{rentid,jdbcType=VARCHAR}
   </update>
-  
+<!--  查询-->
+  <select id="queryAllRent" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from carsys.bus_rent
+    <where>
+      <if test="rentid!=null and rentid!=''">
+        and rentid like concat("%",#{rentid},"%")
+      </if>
+      <if test="carnumber!=null and carnumber!=''">
+        and carnumber like concat("%",#{carnumber},"%")
+      </if>
+      <if test="identity!=null and identity!=''">
+        and identity like concat("%",#{identity},"%")
+      </if>
+      <if test="startTime!=null">
+        and createtime >=#{startTime}
+      </if>
+      <if test="endTime!=null">
+        and createtime <![CDATA[<=]]>#{endTime}
+      </if>
+      <if test="rentflag!=null">
+        and rentflag=#{rentflag}
+      </if>
+    </where>
+      order by createtime desc
+  </select>
 </mapper>

@@ -37,5 +37,14 @@ public class BusController {
     {
         return "business/rent/rentCarManager";
     }
+    /**
+     * 跳转出租单管理
+     * @return
+     */
+    @RequestMapping("toRentManager")
+    public String toRentManager()
+    {
+        return "business/rent/rentManager";
+    }
 
 }

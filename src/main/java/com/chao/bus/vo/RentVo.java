@@ -1,6 +1,9 @@
 package com.chao.bus.vo;
 
 import com.chao.bus.domain.Rent;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
 
 public class RentVo extends Rent {
 
@@ -9,6 +12,13 @@ public class RentVo extends Rent {
      */
     private Integer page;
     private Integer limit;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date startTime;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date endTime;
+
 
     private String code;
 
@@ -36,5 +46,22 @@ public class RentVo extends Rent {
     public void setCode(String code) {
         this.code = code;
     }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
 
 }

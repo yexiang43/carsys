@@ -154,19 +154,6 @@
 	</form>
 </div>
 
-<%--查看客户的div--%>
-<div id="viewCustomerDiv" style="padding: 10px;display: none">
-	<h2 id="view_title" align="center"></h2>
-	<hr>
-	<div style="text-align: right">
-		发布人:<span id="view_opername"></span>
-		<span style="display: inline-block;width: 20px"></span>
-		发布时间:<span id="view_createtime"></span>
-	</div>
-	<hr>
-	<div id="view_content"></div>
-</div>
-
 <script src="${chao}/static/layui/layui.js"></script>
 <script type="text/javascript">
 	var tableIns;
