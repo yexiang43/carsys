@@ -73,10 +73,10 @@
 持续更新中......
 ## 效果展示：
 ![主页效果展示](https://github.com/yexiang43/carsys/raw/master/images/index.png)
-![菜单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/loginfo.png)
-![公告管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/loginfo.png)
-![角色管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/loginfo.png)
-![用户管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/loginfo.png)
+![菜单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/menu.png)
+![公告管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/news.png)
+![角色管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/role.png)
+![用户管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/user.png)
 ![数据源效果欣赏](https://github.com/yexiang43/carsys/raw/master/images/Drud.png)
 ![日志管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/loginfo.png)
 ![客户管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/customer.png)
