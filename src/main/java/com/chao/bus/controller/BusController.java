@@ -46,5 +46,23 @@ public class BusController {
     {
         return "business/rent/rentManager";
     }
+    /**
+     * 跳转汽车入库
+     * @return
+     */
+    @RequestMapping("toCheckCarManager")
+    public String toCheckCarManager()
+    {
+        return "business/check/checkCarManager";
+    }
+    /**
+     * 跳转检查单管理
+     * @return
+     */
+    @RequestMapping("toCheckManager")
+    public String toCheckManager()
+    {
+        return "business/check/checkManager";
+    }
 
 }

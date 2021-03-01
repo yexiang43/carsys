@@ -58,6 +58,8 @@
 
 ## 业务管理
 
+业务管理开发完毕。
+
 ### 主要功能：
 
 ##### 客户管理：
@@ -65,13 +67,21 @@
 对租车客户的信息进行管理。
 
 ##### 车辆管理:
-对汽车进行添加，删除，管理，可以添加车辆图片。并有定时任务清理临时文件。
+对汽车进行添加，删除，管理，可以添加车辆图片。并有定时任务清理临时图片。
 
 ##### 汽车出租
 通过客户身份证号，查询未出租的汽车列表。可以进行汽车的出租。
 
 ##### 出租单管理
 对出租单信息进行修改，删除。
+
+##### 汽车入库
+通过订单号查询订单信息，并可以给此订单存在的问题进行描述。同时会展示车辆，订单，客户等信息。
+
+##### 检查单管理
+
+对检查单进行管理，限制可以对部分内容修改。
+
 
 持续更新中......
 ## 效果展示：
@@ -89,5 +99,5 @@
 ![汽车出租效果展示](https://github.com/yexiang43/carsys/raw/master/images/RentCar01.png)
 ![汽车出租效果展示](https://github.com/yexiang43/carsys/raw/master/images/RentCar02.png)
 ![出租单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/rent.png)
-
-
+![汽车入库效果展示](https://github.com/yexiang43/carsys/raw/master/images/checkcar.png)
+![检查单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/check.png)

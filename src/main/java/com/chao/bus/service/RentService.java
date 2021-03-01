@@ -1,7 +1,10 @@
 package com.chao.bus.service;
 
+import com.chao.bus.domain.Rent;
 import com.chao.bus.vo.RentVo;
 import com.chao.sys.utils.DataGridView;
+
+import java.util.Map;
 
 public interface RentService {
     /**
@@ -28,4 +31,13 @@ public interface RentService {
      * @param rentVo
      */
     void updateRent(RentVo rentVo);
+
+    /**
+     * 验证出租单号是否存在
+     * @param rentid
+     * @return
+     */
+    Rent queryAllRentByrentId(String rentid);
+
+
 }

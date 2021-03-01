@@ -58,4 +58,9 @@ public class RentServiceImpl implements RentService {
     public void updateRent(RentVo rentVo) {
        this.rentMapper.updateByPrimaryKeySelective(rentVo);
     }
+
+    @Override
+    public Rent queryAllRentByrentId(String rentid) {
+        return this.rentMapper.selectByPrimaryKey(rentid);
+    }
 }

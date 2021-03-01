@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>出租管理</title>
+	<title>出租单管理</title>
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Access-Control-Allow-Origin" content="*">
@@ -114,14 +114,9 @@
 					</button>
 				</div>
 			</div>
-		</div>
 	</form>
 </div>
 
-<%--查看大图弹出的层开始--%>
-<div id="viewCarImageDiv" style="display: none;text-align: center">
-	<img alt="出租图片" width="700px" height="450px" id="view_carimg">
-</div>
 
 <script src="${chao}/static/layui/layui.js"></script>
 <script type="text/javascript">
