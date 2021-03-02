@@ -13,7 +13,7 @@
 ## 开发环境：
 
 + 操作系统：macOS bigsur11.1
-+ 编程语言：java 1.8
++ 编程语言：java 
 + 开发工具：IDEA、DBeaver,chrome
 + 项目构建工具：Maven 3.6.1
 + 服务器：Tomcat 8.5
@@ -82,6 +82,16 @@
 
 对检查单进行管理，限制可以对部分内容修改。
 
+## 统计分析
+
+##### 客户地区统计
+展示客户分布的地区，可以根据统计图进行车辆调整。
+
+##### 业务员年度销售额
+可以清晰看到每个业务员的年度销售总额。
+
+#### 公司年度月份销售额统计
+采用折线图，展示公司每个月份的销售额，可以根据此图指定公司战略计划。
 
 持续更新中......
 ## 效果展示：
@@ -101,3 +111,7 @@
 ![出租单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/rent.png)
 ![汽车入库效果展示](https://github.com/yexiang43/carsys/raw/master/images/checkcar.png)
 ![检查单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/check.png)
+![客户地区效果展示](https://github.com/yexiang43/carsys/raw/master/images/opernamestat.png)
+![业务员年度销售额效果展示](https://github.com/yexiang43/carsys/raw/master/images/customerstat.png)
+![公司年度月份销售额效果展示](https://github.com/yexiang43/carsys/raw/master/images/companystat.png)
+

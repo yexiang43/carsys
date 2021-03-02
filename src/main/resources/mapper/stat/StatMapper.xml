@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chao.stat.mapper.StatMapper">
+
+<!--  客户地区统计-->
+  <select id="queryCustomerAreaStat" resultType="com.chao.stat.domain.BaseEntity">
+    SELECT address name ,COUNT(1) value FROM carsys.bus_customer GROUP BY address;
+  </select>
+
+<!--  公司业务员年度销售额-->
+  <select id="queryOpernameYearGradeStat" resultType="com.chao.stat.domain.BaseEntity">
+    select opername as name,sum(price) as value from carsys.bus_rent where DATE_FORMAT(createtime,"%Y")=#{year} GROUP BY opername;
+  </select>
+
+  <!--查询公司年度业绩-->
+  <select id="queryCompanyYearGradeStat" resultType="java.lang.Double">
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'01')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'02')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'03')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'04')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'05')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'06')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'07')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'08')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'09')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'10')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'11')
+    UNION all
+    select sum(price) from carsys.bus_rent where DATE_FORMAT(createtime,"%Y%m")=concat(#{year},'12')
+  </select>
+  
+</mapper>
