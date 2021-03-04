@@ -1,9 +1,11 @@
 package com.chao.sys.controller;
 
 import com.chao.sys.constast.SysConstast;
+import com.chao.sys.domain.User;
 import com.chao.sys.utils.AppFileUtils;
 import com.chao.sys.utils.DataGridView;
 import com.chao.sys.utils.RandomUtils;
+import com.chao.sys.utils.WebUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -68,7 +70,18 @@ public class FileController {
 	public ResponseEntity<Object> downloadShowFile(String path, HttpServletResponse response) {
 		return AppFileUtils.downloadFile(response, path, "");	
 	}
-	
+
+	/**
+	 * 不下载只显示用户头像
+	 */
+	@RequestMapping("downloadShowFileAvatar")
+	public ResponseEntity<Object> downloadShowFileAvatar( HttpServletResponse response) {
+		User user =(User) WebUtils.getHttpSession().getAttribute("user");
+		String path= user.getAvatarpath();
+		WebUtils.getHttpSession().setAttribute("AvatarPath",path);
+		return AppFileUtils.downloadFile(response, path, "");
+	}
+
 	/**
 	 * 下载图片
 	 * @param path

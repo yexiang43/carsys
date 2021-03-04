@@ -24,13 +24,20 @@
 
 ## 功能介绍：
 
-主要分为三大模块：系统管理、业务管理和统计分析。
+主要分为三大模块：用户设置、系统管理、业务管理和统计分析。
+## 用户设置
+##### 个人资料展示:
+展示用户资料，并可以修改任意头像。
+
+其他功能还在开发中...
 
 ## 系统管理
 
 系统管理已经开发完毕。
 
 ### 主要功能：
+##### 登入:
+用户登入。
 
 ##### 菜单管理：
 
@@ -95,7 +102,9 @@
 
 持续更新中......
 ## 效果展示：
+![登入界面效果展示](https://github.com/yexiang43/carsys/raw/master/images/login.png)
 ![主页效果展示](https://github.com/yexiang43/carsys/raw/master/images/index.png)
+![个人资料效果展示](https://github.com/yexiang43/carsys/raw/master/images/userlnformation.png)
 ![菜单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/menu.png)
 ![公告管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/news.png)
 ![角色管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/role.png)

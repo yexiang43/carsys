@@ -5,6 +5,7 @@ import com.chao.sys.service.RoleService;
 import com.chao.sys.service.UserService;
 import com.chao.sys.utils.DataGridView;
 import com.chao.sys.utils.ResultObj;
+import com.chao.sys.utils.WebUtils;
 import com.chao.sys.vo.RoleVo;
 import com.chao.sys.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,10 @@ public class UserController {
     @RequestMapping("updateUser")
     public ResultObj updateUser(UserVo userVo) {
 
+
+        User user =(User) WebUtils.getHttpSession().getAttribute("user");
+        userVo.setUserid(user.getUserid());
+
         System.out.println(userVo);
         try {
             this.userService.updateUser(userVo);
@@ -87,7 +92,7 @@ public class UserController {
         }
     }
     /**
-     * 删除角色
+     * 批量删除角色
      * @param userVo
      * @return
      */
@@ -152,6 +157,14 @@ public class UserController {
             e.printStackTrace();
             return ResultObj.DISPATCH_ERROR;
         }
-
     }
+
+    @RequestMapping("initUserInformation")
+    public User initUserInformation()
+    {
+        User user = (User)WebUtils.getHttpSession().getAttribute("user");
+        System.out.println(user);
+        return user;
+    }
+
 }

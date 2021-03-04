@@ -68,4 +68,13 @@ public class sysController {
     {
         return "system/news/newsManager";
     }
+
+    /**
+     * 跳转个人资料
+     */
+    @RequestMapping("toUserInformation")
+    public String toUserInformation()
+    {
+        return "system/main/userInformation";
+    }
 }

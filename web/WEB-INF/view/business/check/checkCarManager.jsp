@@ -201,6 +201,7 @@
 				}
 			})
 		});
+
         //初始化表单 客片数据
 		function initCheckDate(rentid) {
 			$.post("${chao}/check/initCheckDate.action",{rentid:rentid},function (obj)

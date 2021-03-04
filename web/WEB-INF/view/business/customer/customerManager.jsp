@@ -140,7 +140,7 @@
 				</div>
 			</div>
 			<div class="layui-form-item">
-				<div class="layui-input-block" style="text-align: center;padding-right: 120px">
+				<div class="layui-input-block" style="text-align: center;padding-right: 100px">
 					<button type="button"
 							class="layui-btn layui-btn-normal layui-btn-md layui-icon layui-icon-release layui-btn-radius"
 							lay-filter="doSubmit" lay-submit="">提交
@@ -259,7 +259,7 @@
 				type: 1,
 				title: '添加客户',
 				content: $("#saveOrUpdateDiv"),
-				area: ['500px', '450px'],
+				area: ['450px', '450px'],
 				success: function (index) {
 					//清空表单数据
 					$("#dataFrm")[0].reset();

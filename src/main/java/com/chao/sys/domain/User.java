@@ -23,6 +23,16 @@ public class User {
 
     private Integer available;
 
+    private String Avatarpath;
+
+    public String getAvatarpath() {
+        return Avatarpath;
+    }
+
+    public void setAvatarpath(String avatarpath) {
+        Avatarpath = avatarpath;
+    }
+
     public Integer getUserid() {
         return userid;
     }
