@@ -19,15 +19,19 @@
 + 服务器：Tomcat 8.5
 + 数据库：MySQL  5.7
 + 后端框架：SSM
-+ 前端框架：Layui  
++ 前端框架：Layui
++ 静态网页模板：  [LayuiCMS](https://gitee.com/layuicms/layuicms)
 + 代码托管平台：GitHub
 
 ## 功能介绍：
 
-主要分为三大模块：用户设置、系统管理、业务管理和统计分析。
+主要分为四大模块：用户设置、系统管理、业务管理和统计分析。
 ## 用户设置
 ##### 个人资料展示:
-展示用户资料，并可以修改任意头像。
+展示用户资料，并可以修改任意头像和部分个人资料。
+
+##### 密码修改：
+用户可以在此页面修改自己的密码，后台会把密码变成密文进行储存，更大程度上保证用户信息安全。
 
 其他功能还在开发中...
 
@@ -105,6 +109,7 @@
 ![登入界面效果展示](https://github.com/yexiang43/carsys/raw/master/images/login.png)
 ![主页效果展示](https://github.com/yexiang43/carsys/raw/master/images/index.png)
 ![个人资料效果展示](https://github.com/yexiang43/carsys/raw/master/images/userlnformation.png)
+![密码修改效果展示](https://github.com/yexiang43/carsys/raw/master/images/userpassword.png)
 ![菜单管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/menu.png)
 ![公告管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/news.png)
 ![角色管理管理效果展示](https://github.com/yexiang43/carsys/raw/master/images/role.png)

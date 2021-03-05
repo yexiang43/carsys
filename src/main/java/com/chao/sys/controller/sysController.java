@@ -77,4 +77,12 @@ public class sysController {
     {
         return "system/main/userInformation";
     }
+    /**
+     * 跳转修改密码
+     */
+    @RequestMapping("toUserPassword")
+    public String toUserPassword()
+    {
+        return "system/main/userpassword";
+    }
 }

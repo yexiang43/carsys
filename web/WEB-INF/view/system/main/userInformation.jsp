@@ -11,8 +11,6 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="${chao}/static/layui/css/layui.css" media="all"/>
     <link rel="stylesheet" href="${chao}/static/css/public.css" media="all"/>
-    <link rel="stylesheet" href="${chao}/static/layui_ext/dtree/dtree.css">
-    <link rel="stylesheet" href="${chao}/static/layui_ext/dtree/font/dtreefont.css">
 </head>
 <body>
 

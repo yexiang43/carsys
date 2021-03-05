@@ -9,6 +9,7 @@ import com.chao.sys.utils.WebUtils;
 import com.chao.sys.vo.RoleVo;
 import com.chao.sys.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -167,4 +168,37 @@ public class UserController {
         return user;
     }
 
+    @RequestMapping("updatePassword")
+    public ResultObj updatePassword(UserVo userVo)
+    {
+        System.out.println(userVo.getNewPassword());
+
+        try {
+            User user =(User) WebUtils.getHttpSession().getAttribute("user");
+           //把输入的原密码生成密文进行比对
+            String pwd = DigestUtils.md5DigestAsHex(userVo.getPwd().getBytes());
+            //生成密文
+            String pwd1 = DigestUtils.md5DigestAsHex(userVo.getNewPassword().getBytes());
+            //比对密码
+            if (pwd.equals(user.getPwd()))
+            {
+                if (pwd1.equals(user.getPwd()))return ResultObj.UPDATEPASSWORD_ERROR2;
+                //加入用户id和新密码
+                userVo.setUserid(user.getUserid());
+
+                userVo.setPwd(pwd1);
+                this.userService.updateUser(userVo);
+
+                return ResultObj.UPDATEPASSWORD_TRUE;
+            }else {
+                return ResultObj.UPDATEPASSWORD_ERROR;
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            return ResultObj.UPDATEPASSWORD_ERROR;
+        }
+
+
+    }
 }

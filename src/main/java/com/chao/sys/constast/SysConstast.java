@@ -92,4 +92,9 @@ public interface SysConstast {
     Integer RENT_CAR_TRUE = 1;
     Integer RENT_CAR_FALSE = 0;
     Integer RENT_CAR_CHECK = 2;
+    /**
+     * 修改密码状态
+     */
+    String UPDATEPASSWORD_ERROR = "修改失败原密码错误";
+    String UPDATEPASSWORD_TRUE = "修改成功";
 }
