@@ -33,7 +33,7 @@
                     <label class="layui-form-label">用户姓名:</label>
                     <div class="layui-input-inline" style="padding: 5px">
                         <input type="hidden" name="userid" id="userid">
-                        <input type="text" name="realname" autocomplete="off" readonly="readonly" class="layui-input layui-input-inline"
+                        <input type="text" name="realname" autocomplete="off" class="layui-input layui-input-inline"
                                placeholder="请输入用户姓名" style="height: 30px;border-radius: 10px">
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">身份证号:</label>
                     <div class="layui-input-inline" style="padding: 5px">
-                        <input type="text" name="identity" autocomplete="off" readonly="readonly" class="layui-input layui-input-inline"
+                        <input type="text" name="identity" autocomplete="off" class="layui-input layui-input-inline"
                                placeholder="请输入身份证号" style="height: 30px;border-radius: 10px">
                     </div>
                 </div>
@@ -95,8 +95,8 @@
             <div class="layui-form-item " pane="">
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-block userSex">
-                    <input type="radio" name="sex" disabled="" value="1" title="男">
-                    <input type="radio" name="sex" disabled="" value="0" title="女">
+                    <input type="radio" name="sex" value="1" title="男">
+                    <input type="radio" name="sex" value="0" title="女">
                 </div>
             </div>
             <div class="layui-form-item">
